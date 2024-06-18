@@ -95,17 +95,73 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
+  test('can divide two positive numbers', () => {
+    expected = 2;
+    actual = divide(4,2);
+    expect(actual).toBe(expected)
+  });
+
+  test('can divide two negative numbers', () => {
+    expected = 2;
+    actual = divide(-4,-2);
+    expect(actual).toBe(expected)
+  });
+
+  test('can divide one negative and one positive number', () => {
+    expected = -2;
+    actual = divide(4,-2);
+    expect(actual).toBe(expected)
+  });
 
 });
 
 describe('modulus', () => {
+  test('can get a remainder of 0', () => {
+    expected = 0;
+    actual = modulus(4,2);
+    expect(actual).toBe(expected)
+  });
+
+  test('can get a positive remainder', () => {
+    expected = 1;
+    actual = modulus(5,2);
+    expect(actual).toBe(expected)
+  });
+
+  test('can get a negative remainder', () => {
+    expected = -1;
+    actual = modulus(-5,2);
+    expect(actual).toBe(expected)
+  });
+
 
 });
 
 describe('even', () => {
+  test('can return true if input is even', () => {
+    expected = true;
+    actual = even(4);
+    expect(actual).toBe(expected)
+  });
+
+  test('can return false if input is not even', () => {
+    expected = false;
+    actual = even(5);
+    expect(actual).toBe(expected)
+  });
 
 });
 
 describe('odd', () => {
+  test('can return true if input is odd', () => {
+    expected = true;
+    actual = odd(5);
+    expect(actual).toBe(expected)
+  });
 
+  test('can return false if input is not odd', () => {
+    expected = false;
+    actual = odd(4);
+    expect(actual).toBe(expected)
+  });
 });
