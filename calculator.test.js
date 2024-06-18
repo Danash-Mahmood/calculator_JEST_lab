@@ -137,14 +137,14 @@ describe('modulus', () => {
 
 });
 
-describe('even', () => {
+describe('evenOrOdd', () => {
   test('can return true if input is even', () => {
     expected = true;
     actual = even(4);
     expect(actual).toBe(expected)
   });
 
-  test('can return false if input is not even', () => {
+  test('can return false if input is odd', () => {
     expected = false;
     actual = even(5);
     expect(actual).toBe(expected)
@@ -152,16 +152,3 @@ describe('even', () => {
 
 });
 
-describe('odd', () => {
-  test('can return true if input is odd', () => {
-    expected = true;
-    actual = odd(5);
-    expect(actual).toBe(expected)
-  });
-
-  test('can return false if input is not odd', () => {
-    expected = false;
-    actual = odd(4);
-    expect(actual).toBe(expected)
-  });
-});
