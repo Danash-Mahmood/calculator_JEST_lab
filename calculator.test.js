@@ -70,6 +70,27 @@ describe('subtract', () => {
 });
 
 describe('multiply', () => {
+  test('can multiply two positive numbers', () => {
+    expected = 3;
+    actual = multiply(3,1);
+    expect(actual).toBe(expected)
+
+    
+  });
+  test('can multiply two negative numbers', () => {
+    expected = 150;
+    actual = multiply(-50,-3);
+    expect(actual).toBe(expected)
+
+    
+  });
+  test('can multiply one negative number and one positive', () => {
+    expected = -150;
+    actual = multiply(50,-3);
+    expect(actual).toBe(expected)
+
+    
+  });
 
 });
 
