@@ -14,17 +14,29 @@ describe('sum', () => {
     expected = 5;
     actual = sum(2, 3);
     expect(actual).toBe(expected);
+  
   });
 
-  test.skip('can add two large positive numbers', () => { 
+  test('can add two large positive numbers', () => { 
+    expected = 1289;
+    actual = sum(1000,289);
+    expect(actual).toBe(expected)
     
   });
 
-  test.skip('can add two negative numbers', () => {
+  test('can add two negative numbers', () => {
+    expected = -10;
+    actual = sum(-9,-1);
+    expect(actual).toBe(expected)
+
     
   });
 
-  test.skip('can add zero', () => {
+  test('can add zero', () => {
+    expected = -10;
+    actual = sum(-9,-1);
+    expect(actual).toBe(expected)
+
     
   });
 
